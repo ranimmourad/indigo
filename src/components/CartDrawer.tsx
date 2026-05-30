@@ -36,22 +36,22 @@ export default function CartDrawer() {
             aria-label="Fermer"
             className="p-1 text-indigo hover:opacity-60"
           >
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+            <jpg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
               <line x1="6" y1="6" x2="18" y2="18" />
               <line x1="18" y1="6" x2="6" y2="18" />
-            </svg>
+            </jpg>
           </button>
         </header>
 
         <div className="flex-1 overflow-y-auto px-6 py-5">
           {lines.length === 0 ? (
             <div className="h-full flex flex-col items-center justify-center text-center py-20">
-              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" className="text-stone mb-4">
+              <jpg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" className="text-stone mb-4">
                 <path d="M6 6h15l-1.5 9h-12z" />
                 <circle cx="9" cy="20" r="1.5" />
                 <circle cx="18" cy="20" r="1.5" />
                 <path d="M6 6L5 3H2" />
-              </svg>
+              </jpg>
               <p className="font-serif text-lg text-indigo">Votre panier est vide</p>
               <p className="text-sm text-stone mt-2">Découvrez nos pièces signature.</p>
               <Link

@@ -1,4 +1,4 @@
-// Generates neutral SVG placeholders for each product image filename.
+// Generates neutral jpg placeholders for each product image filename.
 // These will be visually replaced by the real /public/uploads/*.jpg files when uploaded.
 import { writeFileSync, mkdirSync, existsSync } from 'node:fs';
 import { join } from 'node:path';
@@ -31,9 +31,9 @@ const files = [
   { name: 'shorts3.jpg', label: 'Dark Blue Shorts',  bg: '#0A1736', fg: '#F7F5F0' },
 ];
 
-function svg({ label, bg, fg }) {
+function jpg({ label, bg, fg }) {
   return `<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000">
+<jpg xmlns="http://www.w3.org/2000/jpg" viewBox="0 0 800 1000" width="800" height="1000">
   <rect width="100%" height="100%" fill="${bg}"/>
   <g fill="${fg}" font-family="Georgia, 'Cormorant Garamond', serif">
     <text x="400" y="470" text-anchor="middle" font-size="56" letter-spacing="6">INDIGO</text>
@@ -42,11 +42,11 @@ function svg({ label, bg, fg }) {
     <text x="400" y="600" text-anchor="middle" font-size="22" letter-spacing="3">${label}</text>
     <text x="400" y="950" text-anchor="middle" font-size="14" letter-spacing="4" opacity="0.6">REPLACE WITH /public/uploads/${label.toLowerCase()}.jpg</text>
   </g>
-</svg>`;
+</jpg>`;
 }
 
 for (const f of files) {
-  const svgPath = join(root, f.name.replace(/\.jpg$/, '.svg'));
-  writeFileSync(svgPath, svg(f));
+  const jpgPath = join(root, f.name.replace(/\.jpg$/, '.jpg'));
+  writeFileSync(jpgPath, jpg(f));
 }
 console.log('Placeholders created:', files.length);

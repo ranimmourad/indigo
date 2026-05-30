@@ -25,7 +25,7 @@ designed for instant deployment on **Vercel**.
   featured” tags
 - 🇹🇳 All prices displayed in **TND**, French copy throughout
 - ⚡ Static pre-rendering of all product pages — instant page loads
-- 🖼️ Smart image system with **automatic SVG placeholder fallback** until
+- 🖼️ Smart image system with **automatic jpg placeholder fallback** until
   you upload the real photos
 
 ---
@@ -68,7 +68,7 @@ src/
 │   ├── Hero.tsx            # Indigo hero with typographic composition
 │   ├── ProductCard.tsx     # Grid product card with swatches
 │   ├── ProductDetail.tsx   # Gallery + variant selectors + add-to-cart
-│   ├── ProductImage.tsx    # <img> with .jpg → .svg fallback
+│   ├── ProductImage.tsx    # <img> with .jpg → .jpg fallback
 │   ├── CategoryStrip.tsx   # Home category showcase
 │   ├── AboutBlock.tsx      # About section
 │   ├── SectionHeader.tsx   # Reusable section header
@@ -114,8 +114,8 @@ The catalog references the exact filenames you specified.
 ### Shorts (60 TND)
 `shorts1.jpg` (Light Blue), `shorts2.jpg` (Black), `shorts3.jpg` (Dark Blue)
 
-> Until the JPGs are uploaded, the site shows neutral **SVG placeholders** of
-> the same name (`<basename>.svg`). The `<ProductImage>` component falls back
+> Until the JPGs are uploaded, the site shows neutral **jpg placeholders** of
+> the same name (`<basename>.jpg`). The `<ProductImage>` component falls back
 > automatically — so the UI is never broken.
 
 ---

@@ -9,7 +9,7 @@ const TIERED: PriceTier[] = [
 ];
 
 /** Helper to build /uploads/<file>. If the .jpg version doesn't exist yet
- *  (admin hasn't uploaded), the .svg placeholder of the same basename will
+ *  (admin hasn't uploaded), the .jpg placeholder of the same basename will
  *  be served by the <ProductImage> component fallback. */
 const img = (file: string) => `/uploads/${file}`;
 
