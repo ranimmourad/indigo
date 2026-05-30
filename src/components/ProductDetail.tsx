@@ -246,22 +246,22 @@ export default function ProductDetail({ product }: { product: Product }) {
           {/* Reassurance */}
           <ul className="mt-10 grid grid-cols-1 sm:grid-cols-3 gap-4 text-[11px] tracking-[0.2em] uppercase text-stone">
             <li className="flex items-center gap-2">
-              <jpg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
                 <path d="M3 7h13l5 5v5h-3a2 2 0 1 1-4 0H10a2 2 0 1 1-4 0H3z" />
-              </jpg>
+              </svg>
               Livraison Tunisie
             </li>
             <li className="flex items-center gap-2">
-              <jpg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
                 <path d="M21 8V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-2" />
                 <path d="M16 12h6v4h-6a2 2 0 0 1 0-4z" />
-              </jpg>
+              </svg>
               Paiement à la livraison
             </li>
             <li className="flex items-center gap-2">
-              <jpg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
                 <path d="M20 6L9 17l-5-5" />
-              </jpg>
+              </svg>
               Qualité garantie
             </li>
           </ul>

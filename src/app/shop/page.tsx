@@ -120,12 +120,12 @@ function ShopInner() {
                 placeholder="Rechercher…"
                 className="bg-ivory border border-neutral-300 px-9 py-2 text-sm w-52 focus:outline-none focus:border-indigo"
               />
-              <jpg
+              <svg
                 className="absolute left-2.5 top-2.5 text-stone"
                 width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
                 <circle cx="11" cy="11" r="7" />
                 <line x1="20" y1="20" x2="16.65" y2="16.65" />
-              </jpg>
+              </svg>
             </div>
 
             <select

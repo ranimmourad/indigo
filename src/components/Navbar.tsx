@@ -34,11 +34,11 @@ export default function Navbar() {
           aria-label="Menu"
           className="md:hidden text-indigo p-2 -ml-2"
         >
-          <jpg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
             <line x1="3" y1="7" x2="21" y2="7" />
             <line x1="3" y1="12" x2="21" y2="12" />
             <line x1="3" y1="17" x2="21" y2="17" />
-          </jpg>
+          </svg>
         </button>
 
         {/* Center on mobile, left on desktop */}
@@ -81,10 +81,10 @@ export default function Navbar() {
             aria-label="Rechercher"
             className="hidden sm:inline-flex p-2 hover:opacity-70 transition"
           >
-            <jpg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
               <circle cx="11" cy="11" r="7" />
               <line x1="20" y1="20" x2="16.65" y2="16.65" />
-            </jpg>
+            </svg>
           </Link>
           <Link
             href="/admin"
@@ -92,22 +92,22 @@ export default function Navbar() {
             className="hidden sm:inline-flex p-2 hover:opacity-70 transition"
             title="Admin"
           >
-            <jpg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
               <circle cx="12" cy="8" r="4" />
               <path d="M4 21c0-4 4-7 8-7s8 3 8 7" />
-            </jpg>
+            </svg>
           </Link>
           <button
             onClick={open}
             aria-label="Panier"
             className="relative p-2 hover:opacity-70 transition"
           >
-            <jpg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
               <path d="M6 6h15l-1.5 9h-12z" />
               <circle cx="9" cy="20" r="1.5" />
               <circle cx="18" cy="20" r="1.5" />
               <path d="M6 6L5 3H2" />
-            </jpg>
+            </svg>
             {itemCount > 0 && (
               <span className="absolute -top-0.5 -right-0.5 bg-indigo text-ivory text-[10px] w-4 h-4 rounded-full flex items-center justify-center font-medium">
                 {itemCount}
