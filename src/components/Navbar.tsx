@@ -86,17 +86,9 @@ export default function Navbar() {
               <line x1="20" y1="20" x2="16.65" y2="16.65" />
             </svg>
           </Link>
-          <Link
-            href="/admin"
-            aria-label="Admin"
-            className="hidden sm:inline-flex p-2 hover:opacity-70 transition"
-            title="Admin"
-          >
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-              <circle cx="12" cy="8" r="4" />
-              <path d="M4 21c0-4 4-7 8-7s8 3 8 7" />
-            </svg>
-          </Link>
+          
+          {/* Admin icon removed here */}
+          
           <button
             onClick={open}
             aria-label="Panier"
@@ -132,15 +124,7 @@ export default function Navbar() {
                 </Link>
               </li>
             ))}
-            <li>
-              <Link
-                href="/admin"
-                onClick={() => setMobileOpen(false)}
-                className="block py-2 text-stone"
-              >
-                Admin
-              </Link>
-            </li>
+            {/* Admin text link removed here */}
           </ul>
         </div>
       )}

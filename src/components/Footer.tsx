@@ -5,7 +5,8 @@ export default function Footer() {
   return (
     <footer id="contact" className="bg-[#021943] text-ivory mt-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
+        {/* Changed grid to 3 columns instead of 4 */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           <div>
             <Logo variant="light" />
             <p className="mt-6 text-sm leading-relaxed text-ivory/70 max-w-xs">
@@ -21,15 +22,6 @@ export default function Footer() {
               <li><Link href="/shop?category=t-shirts" className="hover:text-ivory">T-Shirts</Link></li>
               <li><Link href="/shop?category=shorts" className="hover:text-ivory">Shorts</Link></li>
               <li><Link href="/shop?category=sets" className="hover:text-ivory">Ensembles</Link></li>
-            </ul>
-          </div>
-
-          <div>
-            <h4 className="font-serif text-lg mb-4">Maison</h4>
-            <ul className="space-y-2 text-sm text-ivory/70">
-              <li><Link href="/#about" className="hover:text-ivory">À propos</Link></li>
-              <li><Link href="/contact" className="hover:text-ivory">Contact</Link></li>
-              <li><Link href="/admin" className="hover:text-ivory">Espace admin</Link></li>
             </ul>
           </div>
 
